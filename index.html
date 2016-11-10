@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+	body {
+		font-family: sans-serif;
+		margin: 0;
+		padding: 0;
+	}
+
+	h2 {
+		text-align: center;
+		text-transform: capitalize;
+		color: tomato;
+	}
+
+	p {
+		color: red;
+	}
+
+	.flooring {
+		position: relative;
+		top: 30px;
+		left: 550px;
+	}
+
+	</style>
+	
+</head>
+<body>
+	<h2>Total Cost of Tile </h2>
+	<div class="flooring">
+	<script>
+		//problem: A program to Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user
+
+		//solution:		
+		
+			function getTotalCost(height, width, costpersqfeet){
+				var height = parseInt(prompt('Please Enter the height of the floor'), 10);
+				var width = parseInt(prompt('Please Enter the width of the floor'), 10);
+				var costPerSqrFeet = parseInt(prompt('Please enter the updated cost per square feet'), 10);
+				var totalCost = height * width * costPerSqrFeet;
+				document.write("<p>Here are the details of the Flooring Project</p>");
+				document.write('Height of the wall: ' + height);
+				document.write("<br/>")
+				document.write('Width of the wall: ' + width);
+				document.write("<br />")
+				document.write('Latest Cost Per Square Feet of the wall: ' + costPerSqrFeet);		
+				document.write("<p> The total cost is displayed below: </p>" + totalCost) ;
+						
+			};
+				getTotalCost();
+
+				
+	</script>
+	</div>
+</body>
+</html>
